@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SevenKitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        body{
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            font-weight: 400;
+            font-style: normal;
+            background-color: rgb(14, 13, 13);
+        }
+        .header-menu{
+            display:block;
+            width: 100%;
+            height: 6em;
+
+        }
+        .logo {
+            display: inline-block;
+            margin: 1.1em 0 0 3em;
+            font-family: "EB Garamond", serif;
+        }
+        #txt {
+            color: #b03305;
+            opacity: 1;
+
+        }
+        .menuwrapper{
+        display: flex;
+        float: right;
+        margin: 3em 4em 0 0 ;
+            
+        }
+        .circle #txt {
+            display: block;
+            justify-content: center;
+            text-align: center;
+            padding: 3px;
+            font-family: "EB Garamond", serif;
+            font-weight: 900;
+        }
+        .circle {
+            background-color: rgba(rgb(86, 63, 63), green, blue, alpha);
+            height: 3em;
+            width: 15em;
+            border-radius: 60px;
+            
+
+        }
+        .menuwrapper >a {
+            padding: 0 40px 0 40px;
+            font-size: 1.1em;
+            text-decoration: none;
+            color: rgb(138, 133, 133);
+            font-size: 1em;
+            font-family: "poppins";
+            font-weight: 500;
+        }
+        .menuwrapper > a:hover {
+            border:2px solid rgba(128, 128, 128, 0.658);
+            border-radius: 5px;
+        }
+        .gridcon{
+            display: flex;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 30vh;
+        }
+        
+        .write {
+            display: block;
+            padding: 0;
+            margin: 5em 0 0 0;
+            float: left;
+            width: 50%;
+        }
+        #tulis{
+            color: #b03305;
+            font-family:"poppins";
+            font-weight: 400;
+            letter-spacing: 2px;
+            font-size: 0.8em;
+            padding: 0;
+            margin: 2.5em 0 1em 6em;
+            
+            
+        }
+        #tulis2{
+            float: left;
+            display: block;
+            color: whitesmoke;
+            padding: 0;
+            font-weight: 900;
+            font-size: 2.9em;
+            margin: 0 0 0 1.7em;
+
+        }
+        #tulis3{
+            line-height: 25px;
+            display: block;
+            float: left;
+            color: whitesmoke;
+            padding: 0;
+            margin: 1em;
+            text-align: left;
+            margin: 1em 0 0 5em;
+            font-family: "poppins";
+            font-weight: 400;
+            
+        }
+        .food{
+            display: flex;
+            height: 31em;
+            width: 31em;
+            padding: 0;
+            margin: 0 0 2em 3em;
+            align-items: center;
+            border-radius: 50%;
+        }
+        .food > img{
+            height: 100%;
+            width:100%;
+            
+        }
+        .food:hover {
+            box-shadow: 5px 5px 5px 5px rgba(202, 183, 183, 0.477);
+        }
+        .loader {
+            background-color: rgb(128, 128, 128, 0.5);
+            position: fixed;
+            border-radius: 50%;
+            border: 20px solid grey;
+            border-top: 20px solid  #b03305;
+            border-bottom: 20px solid #b03305;
+            width: 2em;
+            height: 2em;
+            animation: spin 0.5s linear infinite;
+            z-index: 5;
+            justify-content: center;
+            align-items: center;
+            margin: 18em 0 0 46%;
+
+        }
+        .container {
+            height: 30vh;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .listFood1 {
+            background-color: white;
+            display: block;
+            height: 16em;
+            width: 45em;
+            z-index: 100;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            margin: 6em auto;
+            text-align: center;
+        }
+        #titleForListFood1{
+            display: flex;
+            margin: 10px 0 0 22em;
+
+        }
+        #textForListFood1{
+            margin: 1em 1em 0 0;
+        }
+        #imglistFood1{
+            height: 13em;
+            width: 13em;
+            float: left;
+            margin: 15px 0 0 0;
+        }
+        #priceForFood {
+            font-weight: 900;
+            color: #b03305;
+        }
+        #buttonFirstFood{
+            background-color: #b03305;
+            color: wheat;
+            padding: 10px 3em;
+            border-radius: 40px;
+        }
+        .buttonHover {
+            box-shadow: 0 10px 10px 0 antiquewhite;
+            opacity: 0.6;
+        }
+        @keyframes spin {
+            0%{transform: rotate(0deg );}
+            100%{transform: rotate(360deg);}
+            
+        }
+
+        
+
+      
+
+
+    </style>
+</head>
+<body >
+
+   <div class="loader"></div>
+    <div class="header-menu">
+        <div class="hide">
+        <div class="logo">
+            <div class="circle">
+            <h1 id="txt">Seven Kitchen </h1> 
+            </div>
+        </div>
+               <div class="menuwrapper">
+                 <a href="index.html"> Home </a>
+                 <a href="#"> Contact</a>
+                 <a href="#"> location </a>
+                 <a href="#"> Profile </a>
+              </div> 
+    </div>
+    <div class="container">
+        <div class="listFood1">
+            <img id="imglistFood1" src="assets/rendang.jpg"/>
+            <h3 id="titleForListFood1">Rendang</h3>
+            <p id="textForListFood1">Lorem ipsum odor amet, consectetuer adipiscing elit. Luctus quisque id vehicula mollis suspendisse sociosqu facilisi. Quis phasellus viverra netus vestibulum gravida non lacus. Senectus id sodales nec, nostra arcu pretium et. Molestie venenatis inceptos rutrum facilisi vehicula. Netus vel interdum sociosqu aliquet duis quam. Lorem nostra.</p>
+            <p>Price  :   <span id="priceForFood"></span> </p>
+            <button id="buttonFirstFood">Press Here To Order</button>
+        </div>
+    
+        <div class="listFood2">
+
+        </div>
+
+        <div class="listFood3">
+
+        </div>
+
+        <div class="listFood4">
+
+        </div>
+
+
+    </div>
+</div>
+<script src="./script/script.js"></script>
+</body>
+</html>
